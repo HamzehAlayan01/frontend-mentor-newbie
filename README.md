@@ -1,1 +1,1 @@
-This repository has all the newbie level challenges I did from frontendmentor.io 
+This repository contains all the newbie level challenges I finished from frontendmentor.io 
