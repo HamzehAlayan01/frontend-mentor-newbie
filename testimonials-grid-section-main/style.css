@@ -1,0 +1,119 @@
+*{
+    margin :0 ;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --Purple-50: hsl(260, 100%, 95%);
+--Purple-300: hsl(264, 82%, 80%);
+--Purple-500: hsl(263, 55%, 52%);
+
+
+--White: hsl(0, 0%, 100%);
+--Grey-100: hsl(214, 17%, 92%);
+--Grey-200: hsl(0, 0%, 81%);
+--Grey-400: hsl(224, 10%, 45%);
+--Grey-500: hsl(217, 19%, 35%);
+--Dark-blue: hsl(219, 29%, 14%);
+--Black: hsl(0, 0%, 7%);
+}
+html{
+    font-family : 'Barlow Semi Condensed', sans-serif;
+}
+body{
+    background-color: var(--Grey-100);
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    display:grid;
+    height:70%;
+    width: 1500px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:30px 35px;
+}
+
+.card{
+    padding: 30px;
+    border-radius: 3%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow : 40px 40px 40px rgba(0,0,0,0.2);
+}
+.author{
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+.author-details{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.card img{
+    border:5px solid var(--Grey-200);
+    border-radius:50%;
+}
+.card.lw.first{
+    background-color: var(--Purple-500);
+    grid-column: span 2;
+}
+/* .card.lw.first img{
+    position: absolute;
+    top:0;
+    right:0;
+} */
+
+.card.nw.first{
+    background-color: var(--Grey-500);
+}
+.card.nw.first h4{
+    color:var(--Grey-100);
+}
+.card.nw.first h2{
+    color: var(--Grey-100);
+}
+.card.nw.first p{
+    color:var(--Grey-200);
+}
+
+.card.nw.second{
+    background-color: var(--White);
+}
+.card.lw.second{
+    background-color:var(--Dark-blue);
+    grid-column: span 2;
+}
+.card.lh {
+    background-color: var(--White);
+    grid-row: span 2;
+}
+
+.card.lh h2 ,
+.card.nw.second h2{
+    font-size:22px;
+    color:var(--Grey-500);
+}
+.card.lh h4,
+.card.nw.second h2{
+    color:var(--Grey-400);
+}
+.card.lh p,
+.card.lh.author-title{
+    color:var(--Grey-400);
+}
+.card.nw.second p,
+.card.nw.second.author-title{
+    color:var(--Grey-400);
+}
+
+.card.lw{
+    align-items: flex-start;
+}
+
+
