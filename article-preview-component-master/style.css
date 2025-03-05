@@ -106,7 +106,6 @@ h2{
 
 
 @media (max-width:375px) {
-    
     .wrapper{
         display: flex;
         flex-direction: column;
@@ -122,4 +121,8 @@ h2{
     .article-footer{
         margin-top:auto;
     }
+    .share-container{
+        display:flex;
+    }
+
 }
