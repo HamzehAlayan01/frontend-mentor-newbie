@@ -1,0 +1,39 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.container{
+    width:50vw;
+    height:50vh;
+    display:flex;
+    border-radius: 8% 8% 8% 8%;
+    background-color: white;
+}
+.firstHalf{
+    width:50%;
+    background-color: hsl(234, 85%, 45%);
+    border-radius:8%;
+}
+.secondHalf{
+    display:flex;
+    background-color: white;
+    border-radius:0 8% 8% 0;
+    width:50%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items:center;
+    color:black;
+}
+.secondHalf h2{
+    margin-right:auto;
+    margin-left:5%;
+}
+.secondHalf button{
+    width:90%;
+    border-radius:25px;
+    height:12%;
+    margin: 8% 0 8% 0;
+    background-color: hsl(224, 30%, 27%);
+}
